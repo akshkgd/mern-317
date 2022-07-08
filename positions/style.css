@@ -1,0 +1,88 @@
+/* positions */
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card{
+    width: 350px;
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    margin:20px auto;
+}
+
+.card-img{
+    width: 100%;
+    /* border-top-left-radius: 16px;
+    border-top-right-radius: 16px; */
+    border-radius: 16px 16px  0 0 ;
+
+}
+.card-body{
+    padding: 20px;
+}
+.btn{
+    background-color: tomato;
+    padding: 12px 30px;
+    font-size: 15px;
+    color: white;
+    border-radius: 80px;
+    border: none;
+    cursor: pointer;
+}
+
+.help-btn{
+    background-color: rgb(52, 255, 116);
+    padding: 12px 30px;
+    font-size: 15px;
+    color: black;
+    border-radius: 80px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    right:0;
+    margin: 30px
+}
+.offer{
+    width: 350px;
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #fff;
+    position: sticky;
+    top:0;
+}
+
+.relative{
+    height: 500px;
+    width: 500px;
+    margin: 50px auto;
+    border-radius: 20px;
+    background-color: rgb(52, 255, 116);
+    position: relative;
+}
+.abs{
+    height: 80px;
+    width: 80px;
+    margin:20px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    bottom:0;
+    right:0;
+
+}
+.card-header{
+    position: relative;
+}
+.ratings{
+    position: absolute;
+    font-size: 13px;
+    background-color: rgb(255, 237, 234);
+    color: tomato;
+    padding: 2px 12px;
+    border-radius: 30px;
+    bottom:0;
+    margin: 20px 0 20px 20px;
+}

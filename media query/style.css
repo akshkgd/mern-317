@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width:640px;
+    margin:50px auto;
+}
+.title{
+    font-size:38px;
+    font-weight:700;
+    margin-bottom:30px;
+}
+.blog-img{
+    width:100%;
+}
+/* breakpoints
+xm (extra small): 0px - 575px // rarely use
+sm (small) -> 576px
+md (medium) -> 767px //rare usecase
+lg (large) -> 992px
+xl (extra large) ->1200px
+*/
+
+@media(max-width: 576px){
+    /* only for 576px and smaller */
+    .container{
+        width:100%;
+    }
+    .title{
+        font-size:28px;
+    }
+
+}
+
+.card{
+    width: 340px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 16px;
+    border: 1px solid #ccc;
+}
+.card-img{
+    width: 100%;
+    border-radius: 16px
+}
+.btn{
+    border-radius: 40px;
+    border: none;
+    padding: 12px 30px;
+    font-size: 15px;
+    color: #fff;
+    background-color: black;
+    cursor: pointer;
+}
+
+@media (max-width: 576px){
+    .card{
+        width: auto;
+        border:none;
+        padding: 6;
+    }
+    .card-img{
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
+    .btn{
+        background-color: black;
+    }
+}
+
+@media(min-width: 992px){
+    .card{
+        width: 500px;
+
+    }
+    .card-img{
+        width: 100%;
+        height: 130px;
+        object-fit: cover;
+    }
+    .btn{
+        background-color: tomato;
+    }
+}
+@media(max-width:300px){
+    .card{
+        text-align: center;
+    }
+    .card-img{
+        display: none;
+    }
+    .btn{
+       width: 100%; 
+    }
+}
