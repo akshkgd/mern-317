@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-container{
+    background-image: url('img/bg4.avif');
+    background-color: black;
+    background-size: cover;
+    height: 400px;
+    width:100%;
+}
+.content{
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+
+}
+.bg-btn{
+    background-color: white;
+    padding: 16px 38px;
+    border:none;
+    border-radius: 8px;
+    font-size: 15px;
+}
+.title{
+    margin: 0;
+    font-size: 56px;
+
+}
+.desc{
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.food-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 6%;
+
+}
+.card{
+    width: 320px;
+    padding: 8px;
+    margin:8px;
+    border-radius: 16px;
+    box-shadow:  0 4px 6px rgb(228, 228, 228);
+}
+.card-img{
+    width: 100%;
+    border-radius: 16px;
+
+}
+.food-desc{
+    font-size: 14px;
+}
+.card-header{
+    position: relative;
+}
+.ratings{
+    position: absolute;
+    bottom:0;
+    margin: 10px;
+    font-size: 12px;
+    background-color: #fff;
+    padding: 2px 10px;
+    border-radius: 22px;
+}
+
+.best-seller{
+    position: absolute;
+    top:0;
+    left:0;
+    display: inline-block;
+    font-size: 12px;
+    background-color: rgb(242, 228, 255);
+    color: blueviolet;
+    padding: 2px 10px;
+    border-radius: 22px;
+    margin:10px;
+}
+
+.must-try{
+    position: absolute;
+    top:0;
+    left:0;
+    display: inline-block;
+    font-size: 12px;
+    background-color: rgb(235, 255, 235);
+    color: rgb(0, 99, 0);
+    padding: 2px 10px;
+    border-radius: 22px;
+    margin:10px;
+}
+.card h3{
+    margin:0;
+}
+.flex{
+    margin:7px 0;
+    display: flex;
+    justify-content: space-between;
+}
