@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap');
+@media(min-width:786px){
+    .blog-container{
+        width: 680px;
+        margin: 50px auto;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+@media(max-width:786px){
+    .blog-container{
+        margin: 50px auto;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+.blog-img{
+    width: 100%;
+    border-radius: 20px;
+}
+.title{
+    font-weight: 700;
+    font-size: 40px;
+}
+.btn{
+    width: 100%;
+    padding: 18px ;
+    border-radius: 12px;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border:none;
+    cursor: pointer;
+}
+.purple{
+    
+}
+/* pseudo elements -> first-letter, first-line, before and after */
+.title::first-line{
+    color: purple;
+}
+::selection{
+    background-color: black;
+    color: white;
+}
+
+.btn:hover{
+    background-color: coral;
+}
+.title:hover{
+    color: coral;
+}
+
+.demo{
+    width: 390px;
+    border-radius: 16px;
+    background-color: tomato;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.demo::before{
+    content: 'this is a before content';
+}
+.demo::after{
+    content: 'this is after content';
+}
+.demo-img{
+    width: 100%;
+    border-radius: 16px;
+    
+}
+
+/* pseudo classes : */
+
+.demo:hover{
+    background-color: blueviolet;
+}
+ul li:first-child{
+    color: green;
+}
+ul li:last-child{
+    color:black;
+}
+ul li:nth-child(3){
+    color: purple;
+}
+
+ul li:nth-child(even){
+    background-color: green;
+}
+a:visited{
+    color: green;
+}
+
+a:hover{
+    color: tomato;
+}
+a:focus{
+    color:red;
+}
+
+a:active{
+    color: blue;
+}
+.btn-sm{
+    padding: 12px 30px ;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border:none;
+    cursor: pointer;
+}
+.container{
+    width: 400px;
+    margin: 50px auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+input{
+    border:1px solid lightgray;
+    border-radius: 10px;
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 17px;
+
+}
+input:focus{
+    outline: none;
+    border:1px solid tomato;
+}
