@@ -1,0 +1,115 @@
+.card{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 440px;
+    border-radius: 18px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 60px;
+    /* animation-name: card-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite; */
+    /* animation-fill-mode:forwards; */
+}
+.card-img{
+    width: 100%;
+    border-radius: 18px;
+}
+.btn{
+    border-radius: 8px;
+    padding: 12px 30px;
+    font-size: 15px;
+    color: #fff;
+    background-color: black;
+    border:none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+
+
+    animation-name:shake-btn;
+    animation-duration: 350ms;
+    /* animation-fill-mode: forwards; */
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+}
+
+.card:hover{
+    animation-name: card-animation;
+    animation-duration: 1s;
+    animation-fill-mode:forwards;
+}
+@keyframes card-animation{
+    /* to is destination ->  */
+    to{
+        transform: rotate(3deg);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        /* margin-left: 200px; */
+        /* width: 460px; */
+
+    }
+}
+@keyframes btn-move{
+    to{
+        margin-left: 200px;
+    }
+}
+
+.btn:hover{
+    /* animation-name: btn-animation; */
+    
+}
+@keyframes shake-btn{
+    50%{
+        margin-left: 80px;
+    }
+    100%{
+        margin-right: -80px;
+    }
+}
+@keyframes btn-animation{
+    20%{
+        background-color: tomato;
+    }
+    40%{
+        background-color: turquoise;
+    }
+    60%{
+        background-color: blueviolet;
+    }
+    80%{
+        background-color: purple;
+    }
+    100%{
+        background-color: teal;
+    }
+
+}
+
+.demo{
+    height: 100px;
+    width: 100px;
+    background-color: tomato;
+    transform-origin: 0%;
+    animation-name: demo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+}
+
+@keyframes demo{
+    25%{
+        margin-left: 500px;
+        transform-origin: 0%;
+    }
+    50%{
+        margin-top: 500px;
+        transform-origin: 0%;
+    }
+    75%{
+        margin-right: 500px;
+        transform-origin: 0%;
+    }
+    100%{
+        margin-bottom: 500px;
+        transform-origin: 0%;
+    }
+}
