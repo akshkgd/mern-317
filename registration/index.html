@@ -11,15 +11,20 @@
     
     <div class="container">
         <div class="card">
-            <img src="https://source.unsplash.com/1600x600/?reactjs" class="card-img" alt="">
-            <h1>Master the concepts of react js</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto commodi sed dignissimos, cum quidem ullam officiis sit blanditiis nisi quia qui explicabo, facere, recusandae doloremque!</p>
+            <!-- <img src="https://source.unsplash.com/1600x600/?reactjs" class="card-img" alt=""> -->
+            <h3>Master the concepts of react js</h3>
+            <p>Loremo commodi sed dignissimos, cum quidem ullam officiis sit blanditiis nisi quia qui explicabo, facere, recusandae doloremque!</p>
             <input type="text" placeholder="Enter your Name" id="name">
-            <input type="text" placeholder="Enter your Email" id="email">
+            <input type="text" placeholder="Enter your Email" id="email" onkeyup="checkEmail()">
+            
             <button class="btn" onclick="register()">Register Now</button>
+            <p class="d-none" id="alert">The Email id is already used!</p>
         </div>
+    </div>
+    <div class="user-container" id="userContainer">
     </div>
 
     <script src="./app.js"></script>
+    <!-- <script src="./doubts.js"></script> -->
 </body>
 </html>

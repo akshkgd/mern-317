@@ -1,6 +1,10 @@
 .container{
     width: 600px;
-    margin: 80px auto;
+    margin: 40px auto;
+}
+.user-container{
+    width: 600px;
+    margin: 40px auto;
 }
 .card{
     box-shadow: 0 0 6px #ccc;
@@ -31,4 +35,25 @@ input:focus{
     color: white;
     font-size: 16px;
     cursor: pointer;
+}
+.user-card{
+        border:1px solid #ccc;
+        padding: 12px;
+        border-radius: 10px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-bottom: 10px;
+    }
+
+    .user-card h4{
+        margin:0
+    }
+    .user-card p{
+        margin:0;
+        color: gray;
+    }
+.d-none{
+    display: none;
+}
+.danger{
+    color: red;
 }
