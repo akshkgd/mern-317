@@ -1,0 +1,43 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    width: 500px;
+    margin: 60px auto;
+    text-align: center;
+}
+#dice{
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    background-color: tomato;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+}
+.dice-value{
+    font-size: 42px;
+}
+
+.btn{
+    margin-top: 60px;
+    background-color: black;
+    color: white;
+    padding: 16px 38px;
+    border:none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.dice-animation{
+    animation-name: dice-animation;
+    animation-duration: 4s;
+
+}
+@keyframes dice-animation{
+    100%{
+        transform: rotate(360deg);
+    }
+}
