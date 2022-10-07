@@ -5,6 +5,8 @@ function roll(){
     document.getElementById('dice').classList.add('dice-animation');
     setTimeout(()=>{
         let diceNumber = Math.floor(Math.random()*6);
+        if(diceNumber == 0)
+        diceNumber = 4;
         document.getElementById('diceValue').innerHTML = diceNumber;
 
     }, 2600)

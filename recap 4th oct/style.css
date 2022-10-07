@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+}
+.box{
+    background-color: #ccc;
+    border-radius: 12px;
+    height: 100px;
+    width: 160px;
+    margin: 10px;
+}
