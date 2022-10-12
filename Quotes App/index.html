@@ -8,15 +8,26 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container">
-        img
+    <div class="nav">
+        <a href="" class="logo">CK Quotes</a>
+        <button class="btn">Random Quote</button>
+    </div>
+    <div class="container" >
+        <div id="intro">
+            <h1 class="title">Welcome to the quotes application</h1>
+            <p>Start clicking on authors name to read more quotes</p>
+        </div>
         <div id="author-container">
+            
         </div>
         <div class="random-quote">
             <h1 id="random-quote"></h1>
-            <button class="btn" onclick="fetchRandomQuote()">Next Quote</button>
+            <!-- <button class="btn" onclick="fetchRandomQuote()">Next Quote</button> -->
         </div>
-        
+        <h1 id="author-name"></h1>
+        <div id="requestedQuotesContainer">
+            
+        </div>
     </div>
     <script src="./app.js"></script>
 </body>

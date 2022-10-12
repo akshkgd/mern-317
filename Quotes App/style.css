@@ -10,8 +10,11 @@ body{
     margin: 50px auto;
 
 }
-.random-quote{
-
+.quote{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    margin: 20px 0;
 }
 .btn{
     background-color: blueviolet;
@@ -34,4 +37,20 @@ body{
     border-radius: 20px;
     margin: 6px;
     cursor: pointer;
+}
+.title{
+    font-size: 42px;
+}
+.nav{
+    
+    padding: 12px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    color: tomato;
 }
