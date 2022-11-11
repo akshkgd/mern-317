@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#">WebDev Lessons</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link disabled">Dashboard</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+              <button type="button" class="btn btn-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+      <section>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <img src="./img/hero-illustration.png" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-md-8 text-center">
+                    <h1 class="fw-bold">Improve your coding skills <br> with live Coding classes</h1>
+                    <button class="btn btn-dark px-4 py-3 wd-radius">Start your coding journey </button>
+                </div>
+            </div>
+        </div>
+      </section>
+
+
+
+    <div class="container d-none">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <!-- <div class="alert alert-success text-cente mt-5">Welcome to the login page!</div> -->
+                <h1 class="display-6 mt-5 fw-bold">Welcome back </h1>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <button class="btn btn-primary px-4 py-2 mt-3">Login Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="card my-5">
+                    <img src="https://source.unsplash.com/1600x800/?india" class="card-img-top" alt="">
+
+                    <div class="card-body">
+                        <h4 class="text-ck">Lorem ipsum dolor sit amet consectetur.</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil excepturi quaerat quasi.</p>
+                  <button class="btn btn-ck px-4 py-2 mt-3">Login Now</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+    <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Welcome Back</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <button class="btn btn-primary px-4 py-2 mt-3">Login Now</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

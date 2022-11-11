@@ -11,10 +11,51 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.App {
+  text-align: center;
+}
 .card{
   margin: 20px auto;
   border: 1px solid lightgray;
   padding: 20px;
-  width: 480px;
+  width: 380px;
   border-radius: 18px;
+  text-align: left !important;
+}
+.food-card{
+  margin: 10px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  width: 340px;
+  border-radius: 18px;
+}
+.food-card-img{
+  width: 100%;
+  border-radius: 18px;
+}
+.food-card h3,h4{
+  margin: 4px 0;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.must-try{
+  /* display: inline-block; */
+  padding: 4px 12px;
+  font-size: 14px;
+  color: green;
+  background-color: rgb(213, 255, 213);
+  border-radius: 12px;
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+}
+.food-card-header{
+  position: relative;
+}
+
+.d-none{
+  display: none;
 }

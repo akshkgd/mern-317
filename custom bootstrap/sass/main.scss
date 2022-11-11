@@ -1,0 +1,17 @@
+
+
+$modal-content-border-radius:10px;
+$modal-content-border-color:white;
+$card-border-radius:   16px;
+$input-focus-border-color: blueviolet;
+$input-focus-box-shadow: blueviolet;
+$form-floating-transition: opacity 50ms ease-in-out, transform 50ms ease-in-out;
+
+$theme-colors: (
+  "primary":    blueviolet,
+  "danger": #ff0000,
+  "success": rgb(0, 213, 0),
+  "dark": rgb(17, 17, 17),
+  "white": white,
+);
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

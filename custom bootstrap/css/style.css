@@ -1,0 +1,21 @@
+.card-img-top{
+    border-radius: 16px 16px 0 0;
+}
+.card{
+    border-radius: 16px;
+}
+.wd-radius{
+    border-radius: 10px !important;
+  }
+  @media(max-width:586px){
+    .modal-dialog-centered {
+      display: flex;
+      align-items: end !important;
+    }
+  }
+  @media(min-width:586px){
+    .modal-dialog-centered {
+      display: flex;
+      align-items: center !important;
+    }
+  }
