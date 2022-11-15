@@ -11,22 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.App {
-  text-align: center;
-}.mustTry{
-  /* display: inline-block; */
-  padding: 4px 12px;
-  font-size: 14px;
-  color: green;
-  background-color: rgb(213, 255, 213);
-  border-radius: 12px;
-  position: absolute;
-  bottom: 0;
-  margin: 10px;
-}
-
-.container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}

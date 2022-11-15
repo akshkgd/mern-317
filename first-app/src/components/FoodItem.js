@@ -1,9 +1,21 @@
+import styles from './foodItem.module.css'
 function FoodItem(props){
+    function foodOrderHandler(){
+        console.log('Your order for ', props.name, ' is succesful');
+        if(props.price >199){
+            console.log('Total amount due: ', props.price)
+        }
+        else{
+            console.log('Delivery Charge 40 Rs applicable!')
+            console.log('Total amount due: ', props.price + 40)
+            
+        }
+    }
     return(
-        <div className="food-card">
-            <div className="food-card-header">
-                <img src={props.img} className="food-card-img"/>
-                <p className={props.ratings >= 4.4 ? 'must-try' : 'd-none'}>Must Try</p>
+        <div className={styles.foodCard} onClick={foodOrderHandler}>
+            <div className={styles.foodCardHeader}>
+                <img src={props.img} className={styles.foodCardImg}/>
+                <p className={props.ratings >= 4.4 ? 'mustTry' : 'dNone'}>Must Try</p>
             </div>
             <h3>{props.name}</h3>
             

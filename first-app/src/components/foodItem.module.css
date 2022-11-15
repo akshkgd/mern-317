@@ -1,0 +1,41 @@
+.card{
+    margin: 20px auto;
+    border: 1px solid lightgray;
+    padding: 20px;
+    width: 380px;
+    border-radius: 18px;
+    text-align: left !important;
+  }
+  .foodCard{
+    margin: 10px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    width: 340px;
+    border-radius: 18px;
+  }
+  .foodCardImg{
+    width: 100%;
+    border-radius: 18px;
+  }
+  .foodCard h3,h4{
+    margin: 4px 0;
+  }
+  
+  .mustTry{
+    /* display: inline-block; */
+    padding: 4px 12px;
+    font-size: 14px;
+    color: green;
+    background-color: rgb(213, 255, 213);
+    border-radius: 12px;
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+  }
+  .foodCardHeader{
+    position: relative;
+  }
+  
+  .dNone{
+    display: none;
+  }
