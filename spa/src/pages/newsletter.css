@@ -1,0 +1,28 @@
+input{
+    width: 100%;
+    padding: 18px;
+    border:1px solid lightgray;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+input:focus{
+    outline: none;
+    border: 1px solid tomato;
+}
+.newsletter-btn{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 14px 26px;
+    border:1px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.newsletter-contianer{
+    width: 400px;
+    text-align: left;
+    margin: 20px auto;
+}

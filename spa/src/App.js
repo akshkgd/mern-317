@@ -2,13 +2,15 @@ import {Route, Routes, Link} from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
+import Newsletter from './pages/Newsletter';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <navbar className="navbar">
-      <Link to='/'className='link' ><h3>Codekaro</h3></Link>
+      <Link to='/'className='link' ><h3>Digital Ashish</h3></Link>
         
 
         <div className='nav-links'>
@@ -20,6 +22,7 @@ function App() {
       <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/about' element={<About/>} />
+          <Route path='/newsletter' element={<Newsletter/>} />
           <Route path='*' element={<NotFound/>} />
 
       </Routes>

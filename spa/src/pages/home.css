@@ -1,0 +1,49 @@
+.hero{
+    width: 100%;
+    position: relative;
+}
+.hero-img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    image-orientation:landscape;
+}
+.hero-content{
+    position: absolute;
+    margin:50px 20%;
+    bottom:0;
+    text-align: center;
+    color: white;
+    
+}
+
+.hero-btn{
+    background-color: white;
+    color: black;
+    padding: 16px 38px;
+    border-radius: 12px;
+    border:none;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+.hero-title{
+    font-size:56px;
+    font-weight: 800;
+}
+.hero-desc{
+    font-size: 20px;
+}
+
+.service-container{
+    margin: 40px auto;
+    text-align: left;
+}
+.service-container h1{
+    font-size: 40px;
+    
+}
+.service-container p{
+    font-size: 22px;
+}
