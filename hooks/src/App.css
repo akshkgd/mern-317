@@ -36,10 +36,70 @@
     transform: rotate(360deg);
   }
 }
-
-.container{
+.home-container{
+  margin: 40px auto;
+  width: 600px;
+}
+.form-container{
   margin: 40px auto;
   width: 400px;
+}
+.userDetail{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px;
+  background-color: #eee;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  display: flex;
+}
+.userDetail p:last-child{
+  margin-left: 20px;
+}
+.d-none{
+  display: none;
+}
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #000;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 500ms linear infinite;
+}
+.btn-loader {
+  border: 1px solid #ffffff48;
+  border-radius: 50%;
+  border-top: 1px solid white;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 500ms linear infinite;
+  margin-left: 20px;
+  display: inline-block;
+  
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spin1 {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin1 {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 .title{
   font-size: 60px;
@@ -52,6 +112,23 @@
   cursor: pointer;
   color: white;
   font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.btn-outline{
+  display: inline-block;
+  background-color: orangered;
+  border:2px solid orangered;
+  padding: 13px 30px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+.link{
+  text-decoration: none;
+  color: black;
 }
 input{
   width: 100%;
@@ -65,4 +142,17 @@ input{
 input:focus{
   outline: none;
   border: 1px solid #ccc;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10%;
+  align-items: center;
+
+}
+.logo{
+  text-decoration: none;
+  color: orangered;
+  font-size: 21px;
+  font-weight: bold;
 }
