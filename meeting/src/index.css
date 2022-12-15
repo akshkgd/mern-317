@@ -5,9 +5,56 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(255, 255, 255);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.loader {
+  display: inline-block;
+  border: 1px solid #f3f3f387;
+  border-radius: 50%;
+  border-top: 1px solid #fff;
+  width: 16px;
+  height: 16px;
+  -webkit-animation: spin 800ms linear infinite; /* Safari */
+  animation: spin 800ms linear infinite;
+  margin-left: 8px;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.main-loader{
+  display: inline-block;
+  border: 2px solid #f3f3f387;
+  border-radius: 50%;
+  border-top: 2px solid blueviolet;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 800ms linear infinite; /* Safari */
+  animation: spin 800ms linear infinite;
+  
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
