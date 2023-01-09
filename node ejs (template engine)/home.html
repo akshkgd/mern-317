@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            width: 600px;
+            margin: 50px auto;
+            border: 1px solid lightgray;
+            border-radius: 16px;
+            padding: 12px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 16px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        input {
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid lightgray;
+            font-size: 16px;
+            width: 50%;
+        }
+
+        input:last-child {
+            margin-left: 10px;
+        }
+
+        input:focus {
+            outline: none;
+            border: 1px solid gray;
+        }
+
+        .btn {
+            background-color: black;
+            width: 100%;
+            color: white;
+            padding: 17px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="https://source.unsplash.com/1600x900/?food" alt="">
+        <h1>Master the skill to manage your diet</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi recusandae eum dolorum!</p>
+        <form action="/register" method="post">
+            <div class="flex">
+                <input type="text" name="name" placeholder="Enter your name">
+                <input type="email" name="email" placeholder="Enter your email">
+
+            </div>
+            <button class="btn" type="submit">Register now for free</button>
+        </form>
+    </div>
+</body>
+
+</html>
