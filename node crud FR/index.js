@@ -8,6 +8,7 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'));
 const mongoose = require('mongoose');
 const { strict } = require('assert');
+const ObjectId = require('mongodb').ObjectID;
 mongoose.connect('mongodb+srv://codekaro:codekaro123@cluster0.6ducpnq.mongodb.net/?retryWrites=true&w=majority').then(()=>{
     console.log('DB is connected!')
 })
@@ -38,6 +39,28 @@ app.get('/students', async (req,res)=>{
     console.log(data)
     res.render('users', {students: data})
 })
+app.post('/edit', async (req, res)=>{
+    const User = mongoose.model('students', userSchema)
+    let data = await User.findOne({_id: ObjectId(req.body.id)})
+    console.log(data);
+    res.render('edit', {student: data});
+})
+app.post('/update', async (req, res)=>{
+    const User = mongoose.model('students', userSchema)
+    let data = await User.updateOne(
+       {
+        _id : ObjectId(req.body.id)
+       },
+       {
+        $set: {
+            name: req.body.name,
+            email: req.body.email
+        }
+       })
+       res.redirect('/students')
+       
+    })
+
 app.listen(3000, ()=>{
     console.log('Server running on port 3000')
 })
