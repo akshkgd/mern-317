@@ -1,0 +1,7 @@
+$theme-colors: (
+  "primary":    blueviolet,
+  "danger":     rgb(227, 0, 0),
+  "light":      white,
+  "dark":       black
+);
+@import '../../node_modules/bootstrap/scss/bootstrap.scss'
