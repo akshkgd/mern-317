@@ -1,0 +1,34 @@
+<%- include('../layouts/header') %>
+
+    <div class="">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 mt-5">
+                    <h3 class="mb-4">Add Article</h3>
+                    <form action="/create-post" method="post">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Post Title</label>
+                            <input type="text" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Post Title">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Post Description</label>
+                            <input type="text" name="desc" class="form-control"  placeholder="Post Description">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Post Type</label>
+                            <input type="number" name="type" class="form-control"  placeholder="Type">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Post Content</label>
+                            <textarea class="form-control" name="article" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                          <button class="btn btn-dark py-2 px-5">Create Post</button>
+                    </form>
+
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
