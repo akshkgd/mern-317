@@ -1,0 +1,12 @@
+<%- include('./layouts/header') %> 
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h1 class="mt-5 fw-bold "><%= blog.title %></h1>
+            <p class="my-3 text-primary"><%=blog.desc%></p>
+            <%- blog.article %>
+               
+                
+        </div>
+    </div>
+</div>

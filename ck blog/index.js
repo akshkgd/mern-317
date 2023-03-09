@@ -47,7 +47,13 @@ app.get('/premium', async(req,res)=>{
     const Post = mongoose.model('blog', blogSchema)
     let data = await Post.find({type: 1})
     console.log(data);
-    res.redirect('/')
+    res.render('premium', {blogs: data})
+})
+app.get("/:id", async(req,res)=>{
+    const Post = mongoose.model('blog', blogSchema);
+    let data = await Post.findById(req.params.id);
+    // console.log(data);
+    res.render('blog', {blog: data})
 })
 app.listen(3000, ()=>{
     console.log('Server running on port 3000')
